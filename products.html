@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOCROSS - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b1afaf;
+            color: #1a1818;
+        }
+
+        header {
+            background-color: #1b1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0; /* Adjusted padding for the header */
+            position: relative;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em; /* Increased font size for the heading */
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        #tagline {
+            font-size: 0.8em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111111;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .accessory-block {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .accessory-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .accessory-item:hover {
+            transform: scale(1.05);
+        }
+
+        .accessory-item img {
+            max-width: 100%;
+            height: auto;
+            max-height: 150px;
+            border-radius: 8px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .button-container button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #2980b9;
+        }
+
+        .random-pricing {
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .deal-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            margin-bottom: 90px;
+            transition: transform 0.3s;
+        }
+
+        .deal-item:hover {
+            transform: scale(1.05);
+        }
+
+        .deal-item img {
+            max-width: 100%;
+            height: auto;
+            max-height: 150px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .accessory-item:hover,
+        .deal-item:hover {
+            transform: scale(1.05);
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styles for the shopping cart */
+        #cart {
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #cart:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="1920_polo-web-1.jpg" alt="Header Image">
+        <h1>MOTOCROSS</h1>
+        <p id="tagline">The house of motorbike accessories</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Our Products</h2>
+        <!-- Blocks for Riding Accessories -->
+        <div class="accessory-block">
+            <div class="accessory-item">
+                <img src="Motorcycle-Helmet-PNG-Transparent-Background.png" alt="Helmet">
+                <h3>Riding Helmets</h3>
+                <p>Explore our range of stylish and safety-certified riding helmets.</p>
+                <p>Price: $99.99</p>
+                <p>Rating: ★★★★☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+
+            <div class="accessory-item">
+                <img src="Gloves-PNG-Photos.png" alt="Gloves">
+                <h3>Riding Gloves</h3>
+                <p>Protect your hands with our durable and comfortable riding gloves.</p>
+                <p>Price: $29.99</p>
+                <p>Rating: ★★★★☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+
+            <div class="accessory-item">
+                <img src="Helly-Hansen-Verglas-Down-Jacket-PNG.png" alt="Jacket">
+                <h3>Riding Jackets</h3>
+                <p>Stay stylish and safe with our collection of riding jackets.</p>
+                <p>Price: $149.99</p>
+                <p>Rating: ★★★★☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+        </div>
+
+        <!-- Random Pricing with Ratings -->
+        <h2>Featured Deals</h2>
+        <div class="random-pricing">
+            <div class="deal-item">
+                <img src="muffler.png" alt="Exhaust">
+                <p>Exhaust System</p>
+                <p>Price: $199.99</p>
+                <p>Rating: ★★★★☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+
+            <div class="deal-item">
+                <img src="headlight.png" alt="Headlight">
+                <p>LED Headlights</p>
+                <p>Price: $49.99</p>
+                <p>Rating: ★★★☆☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+
+            <div class="deal-item">
+                <img src="engineguard.png" alt="Engine guard">
+                <p>Engine Guard</p>
+                <p>Price: $19.99</p>
+                <p>Rating: ★★★★☆</p>
+                <div class="button-container">
+                    <button>Buy</button>
+                    <button>Add to Cart</button>
+                    <input type="number" placeholder="Qty" min="1">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Business Name. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add this JavaScript code for button hover effect
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = '#2980b9';
+            });
+
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = '#3498db';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

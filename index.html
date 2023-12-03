@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOCROSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b1afaf;
+            color: #1a1818;
+        }
+
+        header {
+            background-color: #1b1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0; /* Increased padding for the header */
+            position: relative;
+        }
+
+        header img {
+            max-width: 100%;
+            height: 90%;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em; /* Increased font size for the heading */
+            letter-spacing: 4px; /* Added letter spacing for a stylish look */
+            text-transform: uppercase; /* Uppercase text for emphasis */
+        }
+
+        #tagline {
+            font-size: 1em; /* Adjusted font size for the tagline */
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111111;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            width: 80%;
+            position: relative;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .slideshow-img {
+            width: 60%;
+            height: 400px;
+            object-fit: auto;
+            margin-bottom: 135px;
+            margin-left: 0%;
+        }
+
+        footer {
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="1920_polo-web-1.jpg" alt="Header Image">
+        <h1>MOTOCROSS</h1>
+        <p id="tagline">The house of motorbike accessories</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to MOTOCROSS</h2>
+        <p>Welcome to MOTOCROSS, the ultimate destination for high-quality motorbike accessories. We are passionate about providing riders with top-notch products to enhance their riding experience.</p>
+        <p>Explore our wide range of motorbike accessories.</p>
+    </section>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img class="slideshow-img" src="slide1.jpg" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img class="slideshow-img" src="slide2.jpg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img class="slideshow-img" src="slide3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Business Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+</body>
+
+</html>

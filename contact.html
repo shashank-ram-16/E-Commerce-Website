@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOCROSS - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b1afaf;
+            color: #1a1818;
+        }
+
+        header {
+            background-color: #1b1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0; /* Increased padding for the header */
+            position: relative;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Adjust margin as needed */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin for h1 */
+            font-size: 3em; /* Increased font size for the heading */
+            letter-spacing: 4px; /* Added letter spacing for a stylish look */
+            text-transform: uppercase; /* Uppercase text for emphasis */
+        }
+
+        #tagline {
+            font-size: 1em; /* Adjusted font size for the tagline */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111111;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="1920_polo-web-1.jpg" alt="Header Image">
+        <h1>MOTOCROSS</h1>
+        <p id="tagline">The house of motorbike accessories</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Business Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
